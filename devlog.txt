@@ -1,0 +1,5 @@
+2022-01-13 13:09
+- listed possible ideas with their pros and cons on Kts
+- created project repo
+- filled out project googform
+
