@@ -71,4 +71,10 @@ TRT :: listed possible ideas with their pros and cons on Kts
 TLK :: uploaded flag.jpg, configured repo as directed, chose project idea, began propro
 TRT :: uploaded flag.jpg, configured repo as directed, chose project idea, began propro
 --------------------------------------------------------------
+
+2022-01-17
+--------------------------------------------------------------
+TLK :: reviewed propro draft, checked against formatting guidelines
+TRT :: drafted propro, checked against formatting guidelines
+--------------------------------------------------------------
 ==============================================================
