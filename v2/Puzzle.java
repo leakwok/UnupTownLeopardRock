@@ -18,7 +18,7 @@ public class Puzzle{
     }
 
     public String toString(){
-
+        return "";
     }
 
     public void fillWords(String[] _words){
