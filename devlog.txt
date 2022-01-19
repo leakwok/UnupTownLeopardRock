@@ -77,4 +77,9 @@ TRT :: uploaded flag.jpg, configured repo as directed, chose project idea, began
 TLK :: reviewed propro draft, checked against formatting guidelines
 TRT :: drafted propro, checked against formatting guidelines
 --------------------------------------------------------------
+
+2022-01-18
+--------------------------------------------------------------
+TLK :: drafted uml diagram, set up methods for Puzzle class, modified project idea + set deadline for reconsideration
+TRT :: drafted uml diagram, wrote up complete variables + methods for Woo class (v1), modified project idea + set deadline for reconsideration
 ==============================================================
