@@ -37,10 +37,6 @@ public class Puzzle implements PuzzleMaster{
         _outputArr = new String[outputDim][outputDim];
     }
 
-    public Puzzle(String[][] outputArr){
-
-    }
-
     //~~~~~~~~~~ METHODS ~~~~~~~~~~~~~~~~~~~~~~
     public int longestWord(ArrayList<String> words){
         int tracker = 0;
@@ -75,8 +71,8 @@ public class Puzzle implements PuzzleMaster{
 
     }
 
-    public String[] setWords(String[] w){
-        return new String[1];
+    public void setWords(ArrayList<String> w){
+	        
     }
 
 

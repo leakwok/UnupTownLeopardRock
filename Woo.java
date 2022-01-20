@@ -14,7 +14,9 @@ public class Woo{
     public Woo(){
 	_isr = new InputStreamReader(System.in);
 	_in = new BufferedReader(_isr);
-	_currentMaxPairs = 1;
+	_currentMaxPairs = 2;
+	_words = new ArrayList<String>();
+	_clues = new ArrayList<String>();
     	newGame();
     }
     
@@ -43,7 +45,7 @@ public class Woo{
 
      public void collectWords(){
 	String currentWord = "";
-	String currentClue;
+	String currentClue = "";
 	System.out.println("Perfect! Let's get started.");
 	for(int i = 1; i < _wordCount+1; i++){
 		System.out.println("Input word " + i + ":");
@@ -58,11 +60,13 @@ public class Woo{
 		}
 		catch(IOException e){
 		} 
+		_words.add(currentWord);
+		_clues.add(currentClue);
 	}
      }
     public static void main (String[] args){
-/*
 	Woo game = new Woo();     	
+/*
 	game._words.add("hello");
 	game._words.add("five");
 	game._words.add("seven");
@@ -70,6 +74,7 @@ public class Woo{
 	game._clues.add("nice");
 	game._clues.add("twenty");
 */
+/*
 	ArrayList<String> testW = new ArrayList<String>();
 	testW.add("hello");
 	testW.add("five");
@@ -78,11 +83,15 @@ public class Woo{
 	testC.add("bye bye");
 	testC.add("nice");
 	testC.add("twenty");
+*/
 	/* System.out.println(testW);
 	System.out.println(testC); */
+/*
 	Puzzle cross = new Puzzle(testW, testC);
 	System.out.println(cross);
-	WSearch wordSearch = new WSearch(testW);
+*/
+	WSearch wordSearch = new WSearch(game._words);
+	System.out.println("You have gone un and uptown to search for the perfect puzzle. Presenting....");
 	System.out.println(wordSearch);
     }
 }

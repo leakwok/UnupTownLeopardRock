@@ -30,14 +30,11 @@ public class WSearch implements PuzzleMaster{
             outputDim = longest;
         }
 
-        _outputArr = new String[outputDim][outputDim];
-    }
-
-    public WSearch(String[][] outputArr){
-
+        _outputArr = new String[2*outputDim][2*outputDim];
     }
 
     //~~~~~~~~~~ METHODS ~~~~~~~~~~~~~~~~~~~~~~
+    //returns length of longest word in a String ArrayList
     public int longestWord(ArrayList<String> words){
         int tracker = 0;
         for(int i = 0; i < words.size(); i++){
@@ -59,18 +56,24 @@ public class WSearch implements PuzzleMaster{
         return s;
     }
 
-    public String[] setWords(String[] w){
-        return new String[1];
+    //fills _words with elements of String ArrayList argument, updates _wordCount accordingly
+    public void setWords(ArrayList<String> w){
+        _words = new ArrayList<String>();
+	for(int i = 0; i < w.size(); i++){
+		_words.add(w.get(i));
+	}
+	_wordCount = w.size();
     }
 
     public void fillWords(){
+    	
 
     }
     public void fillRand(){
 
     }
     public void sortWords(){
-
+	//sort using algorithm
     }
 
 }
