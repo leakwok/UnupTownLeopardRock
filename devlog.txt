@@ -5,6 +5,7 @@ pd 7
 ---------------------
 Why Did the Leopard Rock Cross the Road?
 
+- write baout deleting overloaded constructor
 /////////// Zone of Reflection \\\\\\\\\\\
 ------------------------------------------
 OBSTACLES OVERCOME
