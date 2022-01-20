@@ -78,4 +78,10 @@ TLK :: drafted a more complete version of PuzzleMaster interface, implemented lo
 TRT :: implemented toString() and constuctor methods for Puzzle.java, incorporated ArrayLists instead of arrays, drafted a more complete version of PuzzleMaster interface, implemented longestWord(), toString() for Puzzle and WSearch and their constructors, achieved compiliability for Woo.java and resolved NullPointerException, created flowchart of state transitions, updated UML diagram, added content to OBSTACLES OVERCOME, COOL STUFF LEARNED, and LESSONS LEARNED, made sure README.md was in compliance with deliverables
 --------------------------------------------------------------
 
+2022-01-20
+--------------------------------------------------------------
+TLK :: removed unnecessary methods, updated method headers with more appropriate return types and parameters, implemented setWords() method, continued building Woo.java collectWords() functionality to fill in _words and _clues arrays, tested initializing instance of WSearch in main method of Woo.java
+TRT :: removed unnecessary methods, updated method headers with more appropriate return types and parameters, implemented setWords() method, continued building Woo.java collectWords() functionality to fill in _words and _clues arrays, tested initializing instance of WSearch in main method of Woo.java
+--------------------------------------------------------------
+
 ==============================================================
