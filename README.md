@@ -5,4 +5,5 @@ Our project is a word search/crossword puzzle generator. It collects words and c
 
 ## How-to-Launch:
 $javac *.java
+
 $java Woo
