@@ -20,6 +20,7 @@ maybe some of these will move into the Obs.Ovrcm section...
 COOL STUFF LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 wow! oo!...
+- a while loop when taking in user input can be helpful because the while loop's condition can check if user input is valid and the content inside the loop can continuously prompt the user for a valid input and handle exceptions. In Woo.java, until the user puts in a valid number, the while loop will keep prompting them to put a valid one in
 
 MID-DEVELOPMENT DESIGN CHANGES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -29,8 +30,12 @@ LESSONS LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 tales of wisdom gained...
 ||||||||||||||||||||||||||||||||||||||||||
-
-
+- compile all files edited before running Woo.java, there were several times when we were getting confused about why we kept getting the same error, and it was because we were only compiling Woo.java, so our changes weren't being updated
+- call the default constructor in an overloaded constructor to initialize variables and setup the instance of the class so you can be sure it will work, it's important to initialize all variables in a constructor before doing anything else, specifically for ArrayLists. We tried to add elements to an ArrayList before initialzing the variable to be a new ArrayList, which caused our error message (Exception in thread "main" java.lang.NullPointerException). The program see the variable as having a null value because it doesn't automatically initialize to a new ArrayList value, so it's important to keep that in mind. 
+- when you call a method and get an error during the method call, it can be helpful to print out the arguments of the method and comment out the method call to find the issue. When we got an error attempting to pass in two ArrayLists into one of the overloaded constructors for Puzzle, we commented out the method call and printed out the two ArrayLists we were passing in to see if the issue was there.
+- using the _ is helpful in differentiating between instance variables and parameters because you can still tell from similar names that the instance variable and parameter have a relationship, but you still know which one is the instance varaible
+- a UML diagram is very useful for outlining our plan and checking that any class implementing our interface is in compliance with it, which is why we continuously updated our UML diagram after we first uploaded it
+- remember to import ArrayList. we made this mistake multiple times and the error message will be "error: cannot find symbol" with the symbol being "class ArrayList"
 
  ______   ______   __   __   __       ______   _______     
 /_____/\ /_____/\ /_/\ /_/\ /_/\     /_____/\ /______/\    
@@ -68,7 +73,8 @@ TRT :: drafted uml diagram, wrote up complete variables + methods for Woo class 
 
 2022-01-19
 --------------------------------------------------------------
-TLK ::
-TRT :: implemented toString() and constuctor methods for Puzzle.java, incorporated ArrayLists instead of arrays
+TLK :: drafted a more complete version of PuzzleMaster interface, implemented longestWord(), toString() for Puzzle and WSearch and their constructors, achieved compiliability for Woo.java and resolved NullPointerException, created flowchart of state transitions, updated UML diagram, added content to OBSTACLES OVERCOME, COOL STUFF LEARNED, and LESSONS LEARNED, made sure README.md was in compliance with deliverables
+TRT :: implemented toString() and constuctor methods for Puzzle.java, incorporated ArrayLists instead of arrays, drafted a more complete version of PuzzleMaster interface, implemented longestWord(), toString() for Puzzle and WSearch and their constructors, achieved compiliability for Woo.java and resolved NullPointerException, created flowchart of state transitions, updated UML diagram, added content to OBSTACLES OVERCOME, COOL STUFF LEARNED, and LESSONS LEARNED, made sure README.md was in compliance with deliverables
 --------------------------------------------------------------
+
 ==============================================================
