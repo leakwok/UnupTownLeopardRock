@@ -80,8 +80,8 @@ TRT :: implemented toString() and constuctor methods for Puzzle.java, incorporat
 
 2022-01-20
 --------------------------------------------------------------
-TLK :: removed unnecessary methods, updated method headers with more appropriate return types and parameters, implemented setWords() method, continued building Woo.java collectWords() functionality to fill in _words and _clues arrays, tested initializing instance of WSearch in main method of Woo.java
-TRT :: removed unnecessary methods, updated method headers with more appropriate return types and parameters, implemented setWords() method, continued building Woo.java collectWords() functionality to fill in _words and _clues arrays, tested initializing instance of WSearch in main method of Woo.java
+TLK :: removed unnecessary methods, updated method headers with more appropriate return types and parameters, implemented setWords() method, continued building Woo.java collectWords() functionality to fill in _words and _clues arrays, tested initializing instance of WSearch in main method of Woo.java, filled puzzle with " " instead of null, added orientation in fillWords() method, fixed README.md based on examples, updated flowchart with exception 
+TRT :: removed unnecessary methods, updated method headers with more appropriate return types and parameters, implemented setWords() method, continued building Woo.java collectWords() functionality to fill in _words and _clues arrays, tested initializing instance of WSearch in main method of Woo.java, filled puzzle with " " instead of null, added orientation in fillWords() method, fixed README.md based on examples, updated flowchart with exception
 --------------------------------------------------------------
 
 ==============================================================
