@@ -14,7 +14,7 @@ public class Woo{
     public Woo(){
 	_isr = new InputStreamReader(System.in);
 	_in = new BufferedReader(_isr);
-	_currentMaxPairs = 2;
+	_currentMaxPairs = 5;
 	_words = new ArrayList<String>();
 	_clues = new ArrayList<String>();
     	newGame();

@@ -81,8 +81,7 @@ public class WSearch implements PuzzleMaster{
             boolean validPos = false;
             while(validPos == false){
                 //pick random orientation from 0-3
-                int orientation = 0;
-                //(int) (Math.random()*4);
+                int orientation = (int) (Math.random()*2);
 
                 int xcor = 0;
                 int ycor = 0;
@@ -91,16 +90,52 @@ public class WSearch implements PuzzleMaster{
                 if(orientation == 0){
                     xcor = (int) (Math.random()*(_outputArr[0].length - s.length() + 1));
                     ycor = (int) (Math.random()*_outputArr.length);
+                    System.out.println(xcor);
+                    System.out.println(ycor);
+                    
+                    boolean allEmpty = true;
+                    
                     for(int i = xcor; i < xcor + s.length(); i++){
-                        if(!(_outputArr[i][ycor].equals(" "))){
-                            if(_outputArr[i][ycor].equals(s.substring(xcor-i, xcor-i+1).toUpperCase())){
+                        if(!(_outputArr[ycor][i].equals(" "))){
+                            if(_outputArr[ycor][i].equals(s.substring(xcor-i, xcor-i+1).toUpperCase())){
                                 validPos = true;
                             }
+                        	allEmpty = false;
                         }
+                    }
+                    if(allEmpty == true){
+                    	validPos = true;
+                    }
+                    if(validPos == true){
+                        for(int i = 0; i < s.length(); i++){
+                            _outputArr[ycor][xcor+i] = (s.substring(i, i+1)).toUpperCase();
+                        }
+                    }
+                }
+                
+                // orientation: <-------- 
+                if(orientation == 1){
+                    xcor = (int) (Math.random()*(_outputArr[0].length - s.length() + 1));
+                    ycor = (int) (Math.random()*_outputArr.length);
+                    System.out.println(xcor);
+                    System.out.println(ycor);
+                    
+                    boolean allEmpty = true;
+                    
+                    for(int i = xcor; i < xcor + s.length(); i++){
+                        if(!(_outputArr[ycor][i].equals(" "))){
+                            if(_outputArr[ycor][i].equals(s.substring(s.length()+xcor-i-1, s.length()+xcor-i).toUpperCase())){
+                                validPos = true;
+                            }
+                        	allEmpty = false;
+                        }
+                    }
+                    if(allEmpty == true){
+                    	validPos = true;
                     }
                     if(validPos == true){
                         for(int i = xcor; i < xcor + s.length(); i++){
-                            _outputArr[i][ycor] = (s.substring(xcor-i, xcor-i+1)).toUpperCase();
+                            _outputArr[ycor][i] = (s.substring(s.length()+xcor-i-1, s.length()+xcor-i)).toUpperCase();
                         }
                     }
                 }
