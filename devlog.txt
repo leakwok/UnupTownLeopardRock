@@ -84,4 +84,10 @@ TLK :: removed unnecessary methods, updated method headers with more appropriate
 TRT :: removed unnecessary methods, updated method headers with more appropriate return types and parameters, implemented setWords() method, continued building Woo.java collectWords() functionality to fill in _words and _clues arrays, tested initializing instance of WSearch in main method of Woo.java, filled puzzle with " " instead of null, added orientation in fillWords() method, fixed README.md based on examples, updated flowchart with exception
 --------------------------------------------------------------
 
+2022-01-21
+--------------------------------------------------------------
+TLK :: added two different orientations for displaying words in the word search, tested for up to 5 words
+TRT :: added two different orientations for displaying words in the word search, tested for up to 5 words
+--------------------------------------------------------------
+
 ==============================================================
