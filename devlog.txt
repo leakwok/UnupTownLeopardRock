@@ -5,27 +5,35 @@ pd 7
 ---------------------
 Why Did the Leopard Rock Cross the Road?
 
-- write baout deleting overloaded constructor
 /////////// Zone of Reflection \\\\\\\\\\\
 ------------------------------------------
 OBSTACLES OVERCOME
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 wow we so BOSS bc...
 - we determined a more approachable MVP by setting a limit for the number of words our program can handle, modifying the formatting of our crossword, and setting a deadline for when to determine if we should proceed with our crossword idea
+- we reviewed our code and realized our placement of code in for loops was off, which was affecting our intersection of words in the puzzles, words were intersecting and letters were being overriden by the new word that was placed on top of it, so we needed to make sure that our algorithm accurately displayed the two words without losing letters
+- we changed the way we thought about our goal, instead of trying to figure out how to code for intersections between words, we let the computer randomly generate and test intersections of words until they worked together, in this way, we only had to take care of random generation and checking of valid positions, rather than actually determining where a valid position would be
 
 UNRESOLVED ISSUES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 blah blah pesky bug...
 maybe some of these will move into the Obs.Ovrcm section...
+- we want to add an orientation to the word search for having words diagonally
+- format the crossword in a better way so the user isn't limited to 52 word pairs, which is the entire alphabet system for uppercase and lowercase, so the intersection of the xcor and ycor is more visually clear
+- have the crossword always have at least one intersection, so it looks like a typical crossword puzzle
 
 COOL STUFF LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 wow! oo!...
 - a while loop when taking in user input can be helpful because the while loop's condition can check if user input is valid and the content inside the loop can continuously prompt the user for a valid input and handle exceptions. In Woo.java, until the user puts in a valid number, the while loop will keep prompting them to put a valid one in
+- we used TerminallyIll to modify cursor location and background/text color
 
 MID-DEVELOPMENT DESIGN CHANGES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 we changed ___ to ___ bc...
+- deleted an overloaded constructor that took in a 2D array as a parameter because we thought the user would not be inputting their own crossword or word search
+- added an answer key to display if the user wanted to look
+- added color to display for making the location of answer key apparent
 
 LESSONS LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -37,7 +45,9 @@ tales of wisdom gained...
 - using the _ is helpful in differentiating between instance variables and parameters because you can still tell from similar names that the instance variable and parameter have a relationship, but you still know which one is the instance varaible
 - a UML diagram is very useful for outlining our plan and checking that any class implementing our interface is in compliance with it, which is why we continuously updated our UML diagram after we first uploaded it
 - remember to import ArrayList. we made this mistake multiple times and the error message will be "error: cannot find symbol" with the symbol being "class ArrayList"
-
+- and or operators are important to keep track of, especially if you're using comparative operators like <, >, and !=, a few of the times we selected the opposite operator instead of the one we actually wanted
+- implementing an answer key let us spot the mistakes in our orientation code, especially how the words intersect in the puzzles 
+- we used a String filled with letters of the alphabet instead of our original idea of using an ArrayList or Array because we wanted to pick random letters, so we used substring() and Math.random() on the String instead
  ______   ______   __   __   __       ______   _______     
 /_____/\ /_____/\ /_/\ /_/\ /_/\     /_____/\ /______/\    
 \:::_ \ \\::::_\/_\:\ \\ \ \\:\ \    \:::_ \ \\::::__\/__  
@@ -88,6 +98,12 @@ TRT :: removed unnecessary methods, updated method headers with more appropriate
 --------------------------------------------------------------
 TLK :: added two different orientations for displaying words in the word search, tested for up to 5 words
 TRT :: added two different orientations for displaying words in the word search, tested for up to 5 words
+--------------------------------------------------------------
+
+2022-01-23
+--------------------------------------------------------------
+TLK :: added finishing touches to word search and crossword, add answer key and colors to both for display functionality, resolved intersection issue, updated UML and flowchart, completed all orientations for word search, finished fillRand() for word search
+TRT :: added finishing touches to word search and crossword, add answer key and colors to both for display functionality, resolved intersection issue, updated UML and flowchart, completed all orientations for word search, finished fillRand() for word search
 --------------------------------------------------------------
 
 ==============================================================
