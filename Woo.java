@@ -45,15 +45,15 @@ public class Woo{
 
 	if(_puzzlePick == 1){
 		System.out.println("\nYou have picked the crossword.");
-		System.out.println("The maximum number of word/clue pairs we recommended for best display is " + _currentMaxPairs + ". However, you may go above it. Do not go above 52.");
+		System.out.println("The maximum number of word/clue pairs we recommended for best display is " + _currentMaxPairs + ". However, you may go above it. Do not go above 26.");
 		System.out.println("How many word/clue pairs would you like to input?");
 		try{
 			_wordCount = Integer.parseInt(_in.readLine());			
 		}
 		catch(IOException e){
 		}
-		while(_wordCount > 53 || _wordCount <= 0){
-			System.out.println("Please input a valid number. It must be at least 1 and less than 53.");
+		while(_wordCount > 26 || _wordCount <= 0){
+			System.out.println("Please input a valid number. It must be at least 1 and less than 27.");
 			try {
 				_wordCount = Integer.parseInt(_in.readLine());			
 			}
